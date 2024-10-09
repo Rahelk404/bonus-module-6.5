@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo class</title>
+
+    <style>
+        *{
+            /* padding: 0; */
+        }
+
+        h1{
+            color: palevioletred;
+        }
+        h1:hover{
+            background-color: aqua;
+        }
+
+        input:focus{
+            color: aqua;
+            outline: none;
+            border: 1px solid rgb(216, 52, 216);
+            border-radius: 2px;
+        }
+
+        a:visited{
+            color: gray;
+        }
+
+        .first >li:first-child{
+            color: red;
+        }
+
+        .last >li:last-child{
+            color: rgb(99, 134, 28);
+        }
+
+        .nth-child > li:nth-child(2n+1){
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo</h1>
+
+    <input type="text">
+    <br>
+    <input type="text">
+    <br>
+    <input type="text">
+
+    <br>
+    <a href="https://www.google.com/">Google</a>
+    <a href="https://www.worldbank.org/en/country/madagascar/overview">Madagascar</a>
+
+    <br>
+
+    <ul class="first">
+        <li>Example 1</li>
+        <li>Example 2</li>
+        <li>Example 3</li>
+        <li>Example 4</li>
+        <li>Example 5</li>
+        <li>Example 6</li>
+    </ul>
+    <ul class="last">
+        <li>Example 1</li>
+        <li>Example 2</li>
+        <li>Example 3</li>
+        <li>Example 4</li>
+        <li>Example 5</li>
+        <li>Example 6</li>
+    </ul>
+    <ul class="nth-child">
+        <li>Example 1</li>
+        <li>Example 2</li>
+        <li>Example 3</li>
+        <li>Example 4</li>
+        <li>Example 5</li>
+        <li>Example 6</li>
+    </ul>
+</body>
+</html>

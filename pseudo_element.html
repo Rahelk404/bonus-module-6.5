@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        h3::after{
+            content: '.pdf';
+            color: rgb(47, 14, 78);
+            font-size: 10px;
+            background-color: rgb(216, 98, 98);
+            border: 1px yellow solid;
+            border-radius: 10px;
+            padding: 2px 5px;
+        }
+
+        h3::before{
+            content: 'start:';
+            color: rgb(32, 4, 59);
+            font-size: 10px;
+            background-color: rgb(221, 113, 113);
+            border: 1px yellow solid;
+            border-radius: 10px;
+            padding: 2px 5px;
+        }
+
+        p::first-letter{
+            font-size: 3em;
+        }
+
+        P::first-line{
+            color: rgb(15, 78, 78);
+            background-color: rgb(242, 248, 246);
+        }
+
+        ::selection{
+            color:rgb(212, 192, 192);
+            background-color: rgb(89, 97, 94);
+        }
+        input::placeholder{
+            color: aquamarine;
+        }
+
+    </style>
+<body>
+
+    <!-- h3*{heading -$} -->
+    <h3>heading -1</h3>
+    <h3>heading -2</h3>
+    <h3>heading -3</h3>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla cupiditate dolores libero molestias saepe tenetur quam iste excepturi itaque aspernatur.</p>
+    <p>Ea quibusdam harum consequatur recusandae, aut quod inventore sed ut dolorum iste ab quos beatae eius molestiae omnis perferendis enim?</p>
+    <p>Quasi aliquid praesentium odio quaerat a animi veritatis repellat hic incidunt eius? Quidem possimus error minima, ducimus facere optio quo!</p>
+
+    <div>
+        <input placeholder="lorem" type="email">
+    </div>
+</body>
+</html>

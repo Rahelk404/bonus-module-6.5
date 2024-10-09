@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Practice</title>
+    <style>
+        h1{
+            color: red;
+            text-align: center;
+        }
+        h1:hover{
+            color: aliceblue;
+            background-color: burlywood;
+        }
+
+        input:focus{
+            color: red;
+            outline: none;
+            border: 1px solid blue;
+            border-radius: 5px;
+            background-color: aqua;
+        }
+        a:visited{
+            color: gray;
+        }
+
+        h3::after{
+            content: 'click here';
+            color: red;
+            background-color: bisque;
+            border: 2px solid gray;
+            border-radius: 20px;
+            padding: 5px;
+            margin-left: 5px;
+        }
+        h3:before{
+            content: 'Step 1: ';
+            color: azure;
+            background-color: gray;
+            border: 2px solid tan;
+            border-radius: 20px;
+            padding: 5px;
+            margin-right: 5px;
+        }
+
+        p::first-line{
+            color: red;
+            background-color: rgb(235, 235, 235);
+        }
+        p::first-letter{
+            font-size: xx-large;
+        }
+        p::selection{
+            color: black;
+            background-color: rgba(158, 153, 153, 0.801);
+        }
+
+        li:nth-child(2n+1){
+            color: red;
+        }
+        ::placeholder{
+            color: red;
+            padding: 5px;
+
+        }
+        .z-axis{
+            /* margin-top: 50px; */
+        }
+
+        .box{
+            position: relative;
+        }
+
+        .boy{
+            top: 50px;
+            z-index: 3;
+        }
+        
+        .ring{
+            top: -30px;
+            z-index: 2;
+        }
+
+        .water{
+           top: -100px;
+            z-index: 1;
+        }
+        </style>
+</head>
+
+<body>
+    <h1>Final practice</h1>
+
+    <input type="text" name="" id="">
+    <input type="text" name="" id="">
+    <input type="text" name="" id="">
+
+    <br>
+    <a href="https://www.google.com">Google</a>
+    <a href="https://www.udemy.com">Udemy</a>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quis consectetur pariatur. Similique sunt dolorum ea adipisci natus, explicabo libero officia fuga rem dolores quia error at est molestiae deserunt.</p>
+    <h3>Download this</h3>
+    
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad omnis laudantium alias iusto quidem! Fugit perferendis sint dicta saepe vitae ullam perspiciatis quod libero eligendi amet, soluta esse maiores alias aliquam quos similique tempora. Nobis, repellendus! Asperiores harum illo totam.</p>
+
+    <div class="list-item">
+        <h1>list item</h1>
+
+        <ul>
+            <li> example 1</li>
+            <li> example 2</li>
+            <li> example 3</li>
+            <li> example 4</li>
+            <li> example 5</li>
+            <li> example 6</li>
+            <li> example 7</li>
+            <li> example 8</li>
+        </ul>
+    </div>
+    
+    <input placeholder="Your mail" type="email" name="" id="">
+
+    <div class="z-axis">
+        <div class="box boy">
+            <img src="../Swim/boy.svg" alt="">
+        </div>
+        <div class="box ring">
+            <img src="../Swim/ring.svg" alt="">
+        </div>
+        <div class="box water">
+            <img src="../Swim/water.svg" alt="">
+        </div>
+    </div>
+</body>
+
+</html>
